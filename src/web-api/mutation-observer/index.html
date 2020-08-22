@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutation Observer</title>
+  </head>
+  <body>
+    <div id="container" contenteditable="true">
+      <h1>MutationObserver</h1>
+      <b>内容可以编辑</b>
+    </div>
+    <div style="margin-top: 45px;">状态 <span id="status"></span></div>
+    <script src="./index.js"></script>
+    <div>
+      <button onclick="observe()">observe</button>
+      <button onclick="disconnect()">disconnect</button>
+      <button onclick="takeRecords()">takeRecords</button>
+      <button onclick="asyncCallback()">触发一个异步的回调</button>
+      <button onclick="setAttr()">设置属性</button>
+    </div>
+  </body>
+</html>
