@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>execCommand</title>
-</head>
-<body>
-  <div id="container" contenteditable="true">
-    this is editor
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>execCommand</title>
+    <style>
+      .editor {
+        border: 1px solid blue;
+      }
 
-  <button onclick="document.execCommand('bold')">bold command</button>
-  <button onclick="document.execCommand('backColor', '#ff0000')">backColor command</button>
-</body>
+      .commands {
+        margin-top: 42px;
+      }
+
+      button {
+        margin-top: 12px;
+      }
+
+      button + button {
+        margin-left: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div contenteditable="true" class="editor">
+      可以通过输入框下面的按钮执行命令，从而修改样式
+      <br />
+      IT之家8月23日消息 realme 印度 CEO 今日在推特放出了多款未上市的 realme
+      原型机，其中含有多种类型的背面设计，包括圆形后置镜头、矩阵后置镜头、横排和竖排摄像头设计等，还拥有独特的玻璃和配色设计。
+      本周三，Realme 表示本月将向印度市场投放两款入门级智能手机新品，分别为 C12 和 C15，将低于 10000 卢比（约合 929
+      元）。 由于印度市场需求较高，realme 在印度市场更倾向于采取所谓的 “机海战术”。IT之家了解到，目前 realme
+      在印度推出约 96 款机型，售价从 6499 至 47999 印度卢比（约合人民币 600 至 4432 元）不等。
+    </div>
+    <div class="commands"></div>
+    <script src="./index.js"></script>
+  </body>
 </html>
